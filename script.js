@@ -96,10 +96,11 @@ function handleGuesses() {
     guessBtn.disabled = true;
     hintBtn.disabled = true;
     enabledReset = true;
+    anthorWordBtn.classList.add("close")
     if (enabledReset) {
       resetBtn.disabled = false;
     }
-    if (hintNumber === 3) {
+    if (hintNumber === 2) {
       let pMsg = document.createElement("p");
       pMsg.innerHTML = `Without Any Hints WOOOOW`;
       msgArea.appendChild(pMsg);
@@ -125,6 +126,7 @@ function handleGuesses() {
       msgArea.innerHTML = `You Lose<span>Try Agin !!!</span>`;
       guessBtn.disabled = true;
       hintBtn.disabled = true;
+    anthorWordBtn.classList.add("close")
       enabledReset = true;
       if (enabledReset) {
         resetBtn.disabled = false;
@@ -194,6 +196,7 @@ function newWord() {
         document.querySelector(".hint span").innerHTML = hintNumber;
     hintBtn.disabled = false;
     }
+    
   }
 
 }

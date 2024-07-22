@@ -139,6 +139,9 @@ h1 {
         font-size: 25px !important;
         display: block;
       }
+      &.close {
+        cursor: no-drop;
+      }
     }
   }
   .kay-color {
