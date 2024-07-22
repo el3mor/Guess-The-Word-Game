@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="guess.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title></title>
+  </head>
+  <body>
+    <h1></h1>
+    <div class="game-flow">
+      <div class="game-area">
+        <div class="inputs"></div>
+        <div class="anthorWord"><i class="fa-solid fa-arrows-rotate"></i> <span></span></div>
+        <div class="control-btns">
+          <button class="check">Check Word</button>
+          <button class="hint"><span></span> Hints</button>
+          <button class="reset" disabled>Reset</button>
+        </div>
+        <div class="massage"></div>
+      </div>
+
+      <div class="kay-colors">
+        <h2>Key Colors</h2>
+        <div class="kay-color">
+          <div class="color full-right"></div>
+          <div class="text">Letter Is Right And In Place</div>
+        </div>
+        <div class="kay-color">
+          <div class="color right-not-place"></div>
+          <div class="text">Letter Is Right But Not In Place</div>
+        </div>
+        <div class="kay-color">
+          <div class="color wrong"></div>
+          <div class="text">Letter Is Wrong And Not Exists In Word</div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
